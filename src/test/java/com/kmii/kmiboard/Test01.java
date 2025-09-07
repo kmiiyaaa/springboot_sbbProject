@@ -62,5 +62,14 @@ public class Test01 {
 		}
 	}
 	
+	
+	@Test
+	@DisplayName("질문 제목으로 조회한 글의 번호가 1번인지 테스트 ")
+	public void testJpa4() {
+		 Question question = questionRepository.findBySubject("sbb가 무엇인가요?");
+		//select * from question where subject = 'sbb가 무엇인가요?'
+		 assertEquals(2, question.getId());
+	}
+	
 
 }

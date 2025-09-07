@@ -6,6 +6,7 @@ import com.kmii.kmiboard.entity.Question;
 
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
 	
+	public Question findBySubject(String subject);
 	
 
 }
