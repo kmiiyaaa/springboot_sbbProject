@@ -35,7 +35,6 @@ public class Question {
 	@Column(columnDefinition = "TEXT") // 긴글도 가능
 	private String content; // 질문 게시판 내용
 	
-	@CreatedDate
 	private LocalDateTime createDate;
 	
 	//1:N 관계 -> 질문 : 답변들 -> @OneToMany

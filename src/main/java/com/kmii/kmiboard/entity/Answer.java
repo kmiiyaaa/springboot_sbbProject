@@ -31,7 +31,7 @@ public class Answer {
 	@Column(columnDefinition = "TEXT")
 	private String content;
 	
-	@CreatedDate
+	
 	private LocalDateTime createDate;
 	
 	//N:1 -> 답변들: 질문 ->@ManyToOne
